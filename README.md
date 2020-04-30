@@ -1,6 +1,12 @@
 # FPM-ME
 Footprint maker for allegro and 3D moudle
 
+### 常用器件索引 ###
+
+器件名称|立创编号|立创封装|FPM封装
+-|-|-|-
+AMS1117-3.3|[C6186](https://item.szlcsc.com/6652.html)|SOT-223|SOT223
+
 ### 参考资料 ###
 1、[立创EDA封装命名参考规范](http://club.szlcsc.com/article/details_40618_1.html)
 
