@@ -1,0 +1,19 @@
+\t (00:00:00) allegro 16.6 S036 (v16-6-112CT) Windows 32
+\t (00:00:00)     Journal start - Thu Apr 30 16:23:56 2020
+\t (00:00:00)         Host=DAIJIAYUN-PC User=Meekdai Pid=23756 CPUs=8
+\t (00:00:00) CmdLine= allegro.exe -s E:\code\FPM-ME\fpm\fpmyi.scr
+\t (00:00:00) 
+   (00:00:00) Loading axlcore.cxt 
+   (00:00:00) *Error* load: can't access file - "C:\\Home\\pcbenv\\DstCxi.il"
+\t (00:00:00) Starting new design...
+\i (00:00:01) trapsize 641
+\i (00:00:01) trapsize 629
+\i (00:00:01) trapsize 643
+\i (00:00:01) trapsize 648
+\i (00:00:02) trapsize 644
+\i (00:00:02) trapsize 1047
+\i (00:00:02) replay 'E:`\code`\FPM-ME`\fpm`\fpmyi.scr' 
+\i (00:00:02) skill '`'load "E:`\`\code`\`\FPM-ME`\`\fpm`\`\fpm.il"`'' 
+\i (00:00:02) done 
+\e (00:00:02) No command active
+\t (00:00:02)     Journal end - Thu Apr 30 16:23:57 2020
