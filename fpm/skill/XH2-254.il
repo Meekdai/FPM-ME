@@ -9,25 +9,31 @@
 sprintf(pName,"XH2-254")
 _PrepareNewSym(pName)
 
+;########################################
+pitch=2.54
+num=2
+outx=pitch
+;########################################
 pH=7.1
 
 PadTH1=_PadTH_Default(1.5 0.9 t)
 PadTH2=_PadTH_Default(1.5 0.9)
 
-_CreatePin(PadTH1 1.27:0 "1")
-_CreatePin(PadTH2 -1.27:0 "2")
+for(i 1 num 
+if(i==1 _CreatePin(PadTH1 0:0 i) _CreatePin(PadTH2 pitch*(i-1):0 i))
+)
 
-_Layer(lPkgGeoSilkT) _Line(list(-3.81:-2.5 -3.81:3.5))
-_Layer(lPkgGeoSilkT) _Line(list(-3.81:3.5 3.81:3.5))
-_Layer(lPkgGeoSilkT) _Line(list(3.81:3.5 3.81:-2.5))
+_Layer(lPkgGeoSilkT) _Line(list(-outx:-2.5 -outx:3.5))
+_Layer(lPkgGeoSilkT) _Line(list(-outx:3.5 (pitch*(num-1)+outx):3.5))
+_Layer(lPkgGeoSilkT) _Line(list((pitch*(num-1)+outx):3.5 (pitch*(num-1)+outx):-2.5))
 
-_Layer(lPkgGeoSilkT) _Line(list(3.81:-2.5 0.6:-2.5))
+_Layer(lPkgGeoSilkT) _Line(list((pitch*(num-1)+outx):-2.5 0.6+(pitch*(num-1)/2):-2.5))
 
-_Layer(lPkgGeoSilkT) _Line(list(0.6:-2.5 0.6:-1.5))
-_Layer(lPkgGeoSilkT) _Line(list(0.6:-1.5 -0.6:-1.5))
-_Layer(lPkgGeoSilkT) _Line(list(-0.6:-1.5 -0.6:-2.5))
+_Layer(lPkgGeoSilkT) _Line(list(0.6+(pitch*(num-1)/2):-2.5 0.6+(pitch*(num-1)/2):-1.5))
+_Layer(lPkgGeoSilkT) _Line(list(0.6+(pitch*(num-1)/2):-1.5 -0.6+(pitch*(num-1)/2):-1.5))
+_Layer(lPkgGeoSilkT) _Line(list(-0.6+(pitch*(num-1)/2):-1.5 -0.6+(pitch*(num-1)/2):-2.5))
 
-_Layer(lPkgGeoSilkT) _Line(list(-0.6:-2.5 -3.81:-2.5))
+_Layer(lPkgGeoSilkT) _Line(list(-0.6+(pitch*(num-1)/2):-2.5 -outx:-2.5))
 
 
 ;ref & val
