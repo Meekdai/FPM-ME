@@ -3,3 +3,4 @@ fpm/NEWLIB/
 pcb/
 !test.brd
 other/
+*.jrl
