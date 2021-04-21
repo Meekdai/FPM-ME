@@ -17,11 +17,11 @@ PadTH2=_PadTH_Default(1.9 0.9)
 PadTH3=_PadTH_Default(3.5 3.2)
 
 for(i 1 8 
-_CreatePin(PadTH1 pitch*(i-1):0 i)
+_CreatePin(PadTH1 pitch*(i-1):0 i+7)
 )
 
 for(i 1 7 
-_CreatePin(PadTH1 pitch*(i-1)+pitch/2:2.84 i+8)
+_CreatePin(PadTH1 pitch*(i-1)+pitch/2:2.84 i)
 )
 
 _CreatePin(PadTH2 -4.125:2.8 "16")
