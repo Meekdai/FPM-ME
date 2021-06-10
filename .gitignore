@@ -1,7 +1,9 @@
 
 fpm/NEWLIB/
 pcb/
+sch/
 pcblib/
+schlib/
 !test.brd
 other/
 *.jrl

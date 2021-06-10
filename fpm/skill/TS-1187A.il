@@ -1,5 +1,5 @@
 ;FPM skill by Meekdai
-;Tree:button/4pin
+;Tree:base/button
 ;Desc:SMT TS-1187A
 ;Vendor:LC
 ;Count:1
